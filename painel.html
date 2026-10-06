@@ -3,10 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="A Passarela: há 35 anos a loja mais completa de Itapuranga-GO. Moda feminina, masculina, infantil, acessórios e cama, mesa e banho.">
-</head>
-<body>
-<title>A Passarela</title>
+<meta name="robots" content="noindex">
+<title>Painel da loja · A Passarela</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
@@ -360,395 +358,267 @@ body.modo-painel{overflow:hidden}
 .p-check{display:flex;gap:8px;align-items:center;font-size:.9rem}
 @media (max-width:480px){.p-row{grid-template-columns:1fr}}
 </style>
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19 13 11"/></symbol>
-  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
-  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
-  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol>
-  <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
-  <symbol id="i-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M6 4h12l3 5-9 11L3 9z"/><path d="M3 9h18M9 4l3 16M15 4l-3 16"/></symbol>
-  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
-  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 18.5 5.3 15A7.5 7.5 0 1 1 9 18.6z"/><path d="M9.5 10.5c.5 1.6 1.6 2.7 3.2 3.3l1.2-1 1.6.8-.4 1.5c-3 .2-6.4-3-6.4-6.2l1.5-.5.8 1.5z"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z"/></symbol>
-  <symbol id="i-dress" viewBox="0 0 60 80" fill="currentColor"><path d="M22 4h16l-2 14 14 52H10l14-52z"/></symbol>
-  <symbol id="i-shirt" viewBox="0 0 60 80" fill="currentColor"><path d="M18 14 30 18l12-4 14 12-8 8-4-4v40H16V30l-4 4-8-8z"/></symbol>
-  <symbol id="i-pants" viewBox="0 0 60 80" fill="currentColor"><path d="M14 8h32l4 68H36L30 30l-6 46H10z"/></symbol>
-  <symbol id="i-throw" viewBox="0 0 60 80" fill="currentColor"><rect x="8" y="34" width="44" height="12" rx="5"/><rect x="5" y="47" width="50" height="12" rx="5"/><rect x="2" y="60" width="56" height="14" rx="5"/></symbol>
-</svg>
-
-<div class="promo" id="faixa"></div>
-<header class="top">
-  <div class="wrap">
-    <a href="#inicio" class="brand"><span class="logo-tile"><i class="mark"></i></span><span class="logo">A Passarela</span></a>
-    <nav class="nav" aria-label="Principal">
-      <a href="#inicio">Início</a>
-      <a href="#categorias">Departamentos</a>
-      <a href="#vitrine">Vitrine</a>
-      <a href="#sobre">A loja</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <div class="icons">
-      <a class="icon-btn" href="#vitrine" aria-label="Ver vitrine"><svg><use href="#i-search"/></svg></a>
-      <button class="icon-btn" id="openBag" aria-label="Abrir minha lista"><svg><use href="#i-bag"/></svg><span class="bag-count" id="bagCount">0</span></button>
-    </div>
+<style>
+/* Ajustes só do painel (página própria, fora do site) */
+body{margin:0}
+.painel{position:static;min-height:100vh;min-height:100dvh}
+.p-body{overflow:visible}
+.p-foot{position:sticky;bottom:0}
+.p-head .p-ver{text-decoration:none;display:inline-flex;align-items:center}
+.p-aviso{background:#FFF4D6;border:1px solid #E8C66B;border-radius:10px;padding:12px 14px;font-size:.88rem}
+</style>
+</head>
+<body>
+<section class="painel travado" id="painel" aria-label="Painel da loja">
+  <div class="p-head">
+    <div class="brand"><span class="logo-tile"><i class="mark"></i></span><div><b>Painel da loja</b><span class="p-sub" id="pStatus">Entre para editar</span></div></div>
+    <div class="p-head-acts"><button class="p-ver" id="pSair">Sair</button><a class="p-ver" href="/" target="_blank" rel="noopener">Ver o site →</a></div>
   </div>
-</header>
-
-<main id="inicio">
-  <section class="show" aria-label="Destaques">
-    <div class="wrap">
-      <div class="show-card" id="show">
-        <div class="show-left">
-          <div class="arrows"><button id="prev" aria-label="Peça anterior">←</button><button id="next" aria-label="Próxima peça">→</button></div>
-          <div class="kicker fade" id="sKicker">A Passarela</div>
-          <h1 class="fade d2" id="sTitle">Carregando a vitrine</h1>
-          <p class="fade d3" id="sText"></p>
-          <button class="cta" id="sCta">Quero essa <span aria-hidden="true">→</span></button>
-          <div class="socials"><a id="sIg" target="_blank" rel="noopener">Instagram</a><a id="sFb" target="_blank" rel="noopener">Facebook</a><a id="sWa" target="_blank" rel="noopener">WhatsApp</a></div>
-        </div>
-        <div class="stage">
-          <div class="seal" aria-hidden="true"><i class="mark"></i><svg viewBox="0 0 100 100"><defs><path id="ring" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text font-family="Jost, sans-serif" font-size="9.2" letter-spacing="2.8" fill="#111111"><textPath href="#ring">A PASSARELA · 35 ANOS · </textPath></text></svg></div>
-          <div class="obj-wrap" id="sObj"></div>
-          <div class="tagline fade d2" id="sTag"></div>
-        </div>
-        <div class="show-right">
-          <div class="inst">Valor</div>
-          <div class="ask fade" id="sPrice">Sob consulta</div>
-          <div class="inst fade d2">Resposta rápida no WhatsApp</div>
-          <div class="size-label" id="sSizeLabel"></div>
-          <div class="sizes" id="sSizes" role="group"></div>
-          <button class="next" id="sNext"><span class="thumb" id="sThumb"></span><span>Próxima peça</span></button>
-        </div>
-        <div class="bars" id="sBars"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="categorias">
-    <div class="wrap center">
-      <div class="eyebrow">Departamentos</div>
-      <h2>A loja mais completa da cidade</h2>
-      <p class="sub">Moda feminina, masculina, infantil e acessórios. E tudo para cama, mesa e banho.</p>
-      <div class="cats" id="cats"></div>
-    </div>
-  </section>
-
-  <section id="vitrine" class="best">
-    <div class="wrap">
-      <div class="best-head">
-        <div>
-          <div class="eyebrow">Vitrine</div>
-          <h2>Novidades da loja</h2>
-          <p class="sub">Escolha as peças, monte sua lista e mande para a nossa equipe pelo WhatsApp.</p>
-        </div>
-        <div class="chips" role="group" aria-label="Filtrar por departamento" id="chips"></div>
-      </div>
-      <div class="grid" id="grid"></div>
-    </div>
-  </section>
-
-  <section id="sobre" class="life">
-    <div class="life-art"><img class="photo" id="sobreImg" alt="A Passarela"></div>
-    <div class="life-copy">
-      <div class="eyebrow">A loja</div>
-      <h2><span id="sobreTitulo"></span> <em id="sobreDestaque"></em></h2>
-      <p id="sobreTexto"></p>
-      <div class="values">
-        <div class="value"><i><svg><use href="#i-gem"/></svg></i>35 anos de<br>tradição</div>
-        <div class="value"><i><svg><use href="#i-spark"/></svg></i>Novidades<br>toda semana</div>
-        <div class="value"><i><svg><use href="#i-moon"/></svg></i>Cama, mesa<br>e banho</div>
-        <div class="value"><i><svg><use href="#i-chat"/></svg></i>Atendimento<br>no WhatsApp</div>
-      </div>
-    </div>
-  </section>
-
-  <div class="facts"><div class="wrap" id="facts"></div></div>
-
-  <section id="medidas">
-    <div class="wrap m-grid">
-      <div>
-        <div class="eyebrow">Cama posta</div>
-        <h2>Qual jogo serve na <em>sua cama?</em></h2>
-        <p>Use as medidas de colchão abaixo como referência e escolha a coberta de 30 a 40 cm maior de cada lado. Em dúvida, mande a medida do seu colchão no WhatsApp que a gente ajuda.</p>
-      </div>
-      <div class="tbl">
-        <table>
-          <thead><tr><th>Tamanho</th><th>Colchão</th><th>Coberta ideal</th></tr></thead>
-          <tbody>
-            <tr><td>Solteiro</td><td>0,88 × 1,88 m</td><td>1,50 × 2,20 m</td></tr>
-            <tr><td>Casal</td><td>1,38 × 1,88 m</td><td>1,80 × 2,20 m</td></tr>
-            <tr><td>Queen</td><td>1,58 × 1,98 m</td><td>2,40 × 2,20 m</td></tr>
-            <tr><td>King</td><td>1,93 × 2,03 m</td><td>2,60 × 2,40 m</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="insta-head">
-        <div>
-          <div class="eyebrow" id="igChamada"></div>
-          <h2>Novidades toda semana <em>no Instagram</em></h2>
-        </div>
-        <a class="btn btn-line" id="igBtn" target="_blank" rel="noopener"></a>
-      </div>
-      <div class="insta" id="insta"></div>
-    </div>
-  </section>
-
-  <section class="community" id="contato">
-    <div class="wrap">
-      <div class="band">
-        <div class="band-l">
-          <span class="logo-tile"><i class="mark"></i></span>
-          <div><h2>Fale com a nossa equipe</h2><p>Tire dúvidas, peça fotos e reserve suas peças direto pelo WhatsApp.</p></div>
-        </div>
-        <div class="wa-list" id="waList"></div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap f-grid">
-    <div class="f-brand">
-      <div class="brand"><span class="logo-tile" style="width:52px;height:52px;border-radius:14px"><i class="mark"></i></span><span class="logo">A Passarela</span></div>
-      <p>Há 35 anos a loja mais completa de Itapuranga-GO. Moda feminina, masculina, infantil, acessórios e cama, mesa e banho.</p>
-      <p class="f-admin"><a href="/painel">Área da loja</a></p>
-    </div>
-    <div><h4>Departamentos</h4><ul id="footDeps"></ul></div>
-    <div><h4>Atendimento</h4><ul id="footWa"></ul></div>
-    <div><h4>Endereço</h4><ul>
-      <li id="end1"></li>
-      <li id="end2"></li>
-      <li><a id="mapa" target="_blank" rel="noopener">Ver no mapa</a></li>
-    </ul></div>
-    <div><h4>Redes</h4><ul>
-      <li><a id="fIg" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a id="fFb" target="_blank" rel="noopener">Facebook</a></li>
-    </ul></div>
+  <div class="p-login" id="pLogin"></div>
+  <div class="p-tabs" role="tablist">
+    <button class="p-tab" id="tabPecas" aria-selected="true">Peças</button>
+    <button class="p-tab" id="tabLoja" aria-selected="false">Loja e contatos</button>
   </div>
-  <div class="legal"><div class="wrap"><span>© 2026 A Passarela · Itapuranga-GO</span><span>Vestindo a cidade há 35 anos.</span></div></div>
-</footer>
-
-<div class="overlay" id="overlay" hidden></div>
-<aside class="drawer" id="drawer" hidden aria-label="Minha lista">
-  <div class="drawer-head"><div class="brand"><span class="logo-tile"><i class="mark"></i></span><h2>Minha lista</h2></div><button class="x" id="closeBag" aria-label="Fechar lista">×</button></div>
-  <div class="items" id="items"></div>
-  <div class="total"><b>Peças</b><span id="total">0</span></div>
-  <a class="btn btn-lime" id="checkout" target="_blank" rel="noopener">Enviar lista pelo WhatsApp</a>
-  <div class="note">A equipe responde com valores, tamanhos e disponibilidade.</div>
-</aside>
-
+  <div class="p-body" id="pBody"></div>
+  <div class="p-foot">
+    <button class="btn btn-lime" id="pSave">Salvar no site</button>
+    <span class="p-msg" id="pMsg">Depois de salvar, o site atualiza sozinho em cerca de 1 minuto.</span>
+  </div>
+</section>
 <div class="toast" id="toast" hidden></div>
 <script>
-// Conteúdo da loja: vem de dados.json, que o Painel da loja edita e salva.
-let D = null;
+// Painel da loja na Vercel: login e gravação passam pelas rotas /api, que salvam no GitHub.
+let D = null, sha = null, dirty = false, saving = false;
+let tab = "pecas", editing = null, confirmDel = null;
+const previas = {}; // fotos recém-enviadas, mostradas antes de o site publicar de novo
 const $ = id => document.getElementById(id);
+const pBody = $("pBody");
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const digits = s => String(s || "").replace(/\D/g, "");
-function fone(num){
-  const n = digits(num).replace(/^55/, "");
-  if (n.length === 11) return `(${n.slice(0,2)}) ${n.slice(2,7)}-${n.slice(7)}`;
-  if (n.length === 10) return `(${n.slice(0,2)}) ${n.slice(2,6)}-${n.slice(6)}`;
-  return num || "";
-}
-const contatos = () => (D.loja.contatos || []).filter(c => digits(c.num));
-const waLink = (text, num) => `https://wa.me/${digits(num || (contatos()[0] || {}).num)}?text=${encodeURIComponent(text)}`;
-const photo = (src, alt) => src ? `<img class="photo" src="${esc(src)}" alt="${esc(alt)}" loading="lazy">` : "";
-const sizesOf = p => String(p.sizes || "").split(",").map(s => s.trim()).filter(Boolean);
 const priceOf = p => p.price ? p.price : "Sob consulta";
-const CORES = {
-  limao:{nome:"Limão", bg:"#D8FE47", ink:"#111111", line:"rgb(17 17 17 / .2)", btn:"#111111", btnInk:"#D8FE47"},
-  preto:{nome:"Preto", bg:"#161616", ink:"#F4F4EC", line:"rgb(244 244 236 / .25)", btn:"#D8FE47", btnInk:"#111111"},
-  claro:{nome:"Limão claro", bg:"#EEFBC2", ink:"#111111", line:"rgb(17 17 17 / .18)", btn:"#111111", btnInk:"#D8FE47"},
-  creme:{nome:"Creme", bg:"#F4F4EC", ink:"#111111", line:"rgb(17 17 17 / .18)", btn:"#111111", btnInk:"#D8FE47"},
-  oliva:{nome:"Verde-oliva", bg:"#2B3110", ink:"#EEFBC2", line:"rgb(238 251 194 / .25)", btn:"#D8FE47", btnInk:"#111111"},
+const photo = (src, alt) => src ? `<img class="photo" src="${esc(previas[src] || "/" + String(src).replace(/^\//, ""))}" alt="${esc(alt)}" loading="lazy">` : "";
+const CORES = {limao:"Limão", preto:"Preto", claro:"Limão claro", creme:"Creme", oliva:"Verde-oliva"};
+let tt; function toast(t){ const el = $("toast"); el.textContent = t; el.hidden = false; clearTimeout(tt); tt = setTimeout(() => el.hidden = true, 2200); }
+
+async function api(rota, corpo){
+  const r = await fetch("/api/" + rota, corpo === undefined ? {credentials:"same-origin"} : {method:"POST", credentials:"same-origin", headers:{"Content-Type":"application/json"}, body:JSON.stringify(corpo)});
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401 && j.erro === "sessao") { travar("Sua sessão terminou. Entre de novo."); throw j; }
+  if (!r.ok) throw Object.assign(j, {status:r.status});
+  return j;
+}
+const ERROS = {
+  conflito: "O conteúdo mudou desde que você abriu o painel. Atualize a página e faça a mudança de novo.",
+  token: "O painel não tem permissão para gravar no GitHub. Confira o GITHUB_TOKEN na Vercel.",
+  github: "O GitHub não respondeu agora. Tente de novo em instantes.",
+  grande: "A foto ficou grande demais. Tente outra foto.",
 };
-const PADROES = [
-  ["twill","#3D5A80,#4A6990","i-pants",false],
-  ["stripe","#F4F4EC,#2A2A2A,#D8FE47","i-shirt",false],
-  ["herring","#1E1E1E,#2C2C2C","i-bag",true],
-  ["quilt","#FAFAF5,#E2E2D6","i-throw",false],
-  ["knit","#EEFBC2,#E0EDAE","i-throw",false],
-];
-function pattern(type, colors){
-  const [a,b,c] = colors.split(",");
-  switch(type){
-    case "knit": return `background-color:${a};background-image:linear-gradient(135deg, ${b} 25%, transparent 25%), linear-gradient(225deg, ${b} 25%, transparent 25%), linear-gradient(315deg, ${b} 25%, transparent 25%), linear-gradient(45deg, ${b} 25%, transparent 25%);background-size:22px 22px`;
-    case "twill": return `background:repeating-linear-gradient(45deg, ${a} 0 3px, ${b} 3px 6px)`;
-    case "quilt": return `background:repeating-linear-gradient(45deg, transparent 0 34px, ${b} 34px 36px),repeating-linear-gradient(-45deg, transparent 0 34px, ${b} 34px 36px), radial-gradient(circle at 50% 40%, ${a}, ${b})`;
-    case "herring": return `background-color:${a};background-image:linear-gradient(135deg, ${b} 25%, transparent 25%), linear-gradient(225deg, ${b} 25%, transparent 25%);background-size:28px 56px`;
-    case "stripe": return `background:repeating-linear-gradient(90deg, ${a} 0 26px, ${b} 26px 32px, ${a} 32px 52px, ${c} 52px 58px)`;
-  }
-  return `background:${a}`;
-}
+const msgErro = e => ERROS[e && e.erro] || "Não deu para salvar agora. Tente de novo em instantes.";
 
-/* ---------- Página ---------- */
-function setLink(id, href){ const el = $(id); if (!el) return; if (href) { el.href = href; el.hidden = false; } else el.hidden = true; }
-function renderLoja(){
+/* ---------- Login ---------- */
+function travar(msg){
+  $("painel").classList.add("travado"); $("pStatus").textContent = "Entre para editar";
+  $("pLogin").innerHTML = `
+    <form id="lgForm">
+      <div class="brand"><span class="logo-tile"><i class="mark"></i></span><b>Painel da loja</b></div>
+      <h2>Entrar</h2>
+      <p>Digite seu usuário e senha para editar o site.</p>
+      <label class="pf"><span>Usuário</span><input id="lgUser" autocomplete="username"></label>
+      <label class="pf"><span>Senha</span><input id="lgPass" type="password" autocomplete="current-password"></label>
+      <button class="btn btn-lime" id="lgGo" type="submit">Entrar</button>
+      <p id="lgMsg" class="${msg ? "erro" : ""}">${msg ? esc(msg) : ""}</p>
+    </form>`;
+  $("lgForm").onsubmit = entrar;
+  setTimeout(() => $("lgUser").focus(), 0);
+}
+function semConfig(falta){
+  $("painel").classList.add("travado");
+  $("pLogin").innerHTML = `<form><div class="brand"><span class="logo-tile"><i class="mark"></i></span><b>Painel da loja</b></div>
+    <h2>Falta configurar</h2>
+    <p class="p-aviso">Cadastre na Vercel (Settings → Environment Variables) estes itens e publique de novo: <b>${falta.map(esc).join(", ")}</b>.</p></form>`;
+}
+async function entrar(e){
+  e.preventDefault();
+  const erro = t => { $("lgMsg").textContent = t; $("lgMsg").className = "erro"; };
+  const usuario = $("lgUser").value.trim(), senha = $("lgPass").value;
+  if (!usuario || !senha) return erro("Preencha usuário e senha.");
+  $("lgGo").disabled = true; $("lgMsg").className = ""; $("lgMsg").textContent = "Entrando…";
+  try { await api("login", {usuario, senha}); await abrir(); }
+  catch (j) { erro(j.erro === "senha" ? "Usuário ou senha incorretos." : j.erro === "config" ? "O painel ainda não foi configurado na Vercel." : "Não deu para entrar agora. Tente de novo."); }
+  finally { const b = $("lgGo"); if (b) b.disabled = false; }
+}
+async function abrir(){
+  const j = await api("dados");
+  D = j.dados; sha = j.sha; D.pecas = D.pecas || []; D.loja = D.loja || {};
+  $("painel").classList.remove("travado"); setDirty(false); renderPainel();
+}
+$("pSair").onclick = async () => {
+  if (dirty && !confirm("Você tem mudanças não salvas. Sair mesmo assim?")) return;
+  await fetch("/api/sair", {method:"POST"}).catch(() => {}); setDirty(false); D = null; travar();
+};
+
+/* ---------- Edição ---------- */
+function setDirty(v){ dirty = v; $("pStatus").textContent = v ? "Alterações não salvas" : "Tudo salvo"; $("pStatus").classList.toggle("warn", v); }
+const field = (id, label, value, opts={}) => opts.area
+  ? `<label class="pf"><span>${label}</span><textarea id="${id}" rows="${opts.rows||3}">${esc(value)}</textarea>${opts.hint ? `<small>${opts.hint}</small>` : ""}</label>`
+  : `<label class="pf"><span>${label}</span><input id="${id}" type="text" value="${esc(value)}" ${opts.ph ? `placeholder="${esc(opts.ph)}"` : ""}>${opts.hint ? `<small>${opts.hint}</small>` : ""}</label>`;
+
+function renderPainel(){
+  $("tabPecas").setAttribute("aria-selected", tab === "pecas");
+  $("tabLoja").setAttribute("aria-selected", tab === "loja");
+  if (tab === "loja") return renderLojaForm();
+  if (editing) return renderPecaForm();
+  pBody.innerHTML = `
+    <button class="btn btn-lime p-new" id="pNew">+ Nova peça</button>
+    <ul class="p-list">${D.pecas.map((p,i) => `
+      <li>
+        <div class="p-thumb">${photo(p.img, p.name)}</div>
+        <div class="p-info"><b>${esc(p.name)}</b><small>${esc(p.cat)} · ${esc(priceOf(p))}${p.vitrine ? " · na vitrine do topo" : ""}</small></div>
+        <div class="p-acts">
+          <button data-act="up" data-i="${i}" aria-label="Subir" ${i===0?"disabled":""}>↑</button>
+          <button data-act="down" data-i="${i}" aria-label="Descer" ${i===D.pecas.length-1?"disabled":""}>↓</button>
+          <button data-act="edit" data-i="${i}">Editar</button>
+          <button data-act="del" data-i="${i}" class="${confirmDel===i?"danger":""}">${confirmDel===i?"Confirmar":"Excluir"}</button>
+        </div>
+      </li>`).join("")}</ul>`;
+}
+function renderPecaForm(){
+  const p = editing;
+  const deps = [...new Set([...(D.departamentos||[]), p.cat].filter(Boolean))];
+  pBody.innerHTML = `
+    <button class="p-back" id="pBack">← Voltar para a lista</button>
+    <div class="p-photo">
+      <div class="p-thumb big">${photo(p.img, p.name)}</div>
+      <div><label class="btn btn-line p-upload">Trocar foto<input type="file" id="pFile" accept="image/jpeg,image/png,image/webp" hidden></label>
+      <small id="pUpMsg">Use uma foto em pé (vertical), de preferência.</small></div>
+    </div>
+    ${field("fName","Nome da peça",p.name)}
+    <label class="pf"><span>Departamento</span><select id="fCat">${deps.map(d => `<option ${d===p.cat?"selected":""}>${esc(d)}</option>`).join("")}</select></label>
+    ${field("fSpec","Descrição curta",p.spec)}
+    ${field("fPrice","Preço",p.price,{ph:"Ex.: R$ 189,90", hint:"Deixe vazio para mostrar “Sob consulta”."})}
+    ${field("fSizes","Tamanhos",p.sizes,{ph:"P, M, G, GG", hint:"Separe por vírgula."})}
+    ${field("fTag","Selo na foto",p.tag,{ph:"Ex.: Nova coleção"})}
+    <fieldset class="p-set"><legend>Vitrine animada do topo</legend>
+      <label class="p-check"><input type="checkbox" id="fVit" ${p.vitrine?"checked":""}> Mostrar esta peça na vitrine do topo</label>
+      ${field("fVt","Título grande",p.vt,{ph:p.name})}
+      ${field("fVx","Texto curto",p.vx,{area:true,rows:2})}
+      ${field("fVf","Frase embaixo da foto",p.vf)}
+      <label class="pf"><span>Cor de fundo</span><select id="fCor">${Object.entries(CORES).map(([k,n]) => `<option value="${k}" ${k===p.cor?"selected":""}>${n}</option>`).join("")}</select></label>
+    </fieldset>`;
+}
+function renderLojaForm(){
   const L = D.loja;
-  $("faixa").textContent = L.faixa || ""; $("faixa").hidden = !L.faixa;
-  $("sobreTitulo").textContent = L.sobreTitulo || ""; $("sobreDestaque").textContent = L.sobreDestaque || ""; $("sobreTexto").textContent = L.sobreTexto || "";
-  if (L.sobreImg) $("sobreImg").src = L.sobreImg;
-  $("facts").innerHTML = (L.numeros || []).filter(n => n.v).map(n => `<div class="fact"><b>${esc(n.v)}</b><span>${esc(n.t)}</span></div>`).join("");
-  $("waList").innerHTML = contatos().map(c => `<a class="btn" href="${esc(waLink("Olá, A Passarela! Vim pelo site e gostaria de atendimento.", c.num))}" target="_blank" rel="noopener"><span>${esc(c.label)}</span><b>${esc(fone(c.num))}</b></a>`).join("");
-  $("footWa").innerHTML = contatos().map(c => `<li>${esc(c.label)}: <a class="sel" href="${esc(waLink("Olá, A Passarela! Vim pelo site.", c.num))}" target="_blank" rel="noopener">${esc(fone(c.num))}</a></li>`).join("");
-  $("end1").textContent = L.endereco1 || ""; $("end2").textContent = L.endereco2 || "";
-  setLink("mapa", L.endereco1 ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${L.endereco1} ${L.endereco2 || ""}`) : "");
-  setLink("sIg", L.instagram); setLink("fIg", L.instagram); setLink("sFb", L.facebook); setLink("fFb", L.facebook);
-  setLink("sWa", contatos().length ? waLink("Olá, A Passarela! Vim pelo site e gostaria de mais informações.") : "");
-  $("igChamada").textContent = L.instagramChamada || ""; $("igBtn").textContent = L.instagramNome || "Instagram"; setLink("igBtn", L.instagram);
-  $("footDeps").innerHTML = (D.departamentos || []).slice(0,5).map(d => `<li><a href="#vitrine" data-go="${esc(d)}">${esc(d)}</a></li>`).join("");
+  pBody.innerHTML = `
+    ${field("lFaixa","Faixa preta do topo",L.faixa)}
+    <fieldset class="p-set"><legend>WhatsApp</legend>
+      <small>O primeiro número recebe as listas de pedido. Use 55 + DDD + número. Deixe vazio para esconder.</small>
+      ${(L.contatos||[]).map((c,i) => `<div class="p-row">${field("lCn"+i,"Nome "+(i+1),c.label)}${field("lCv"+i,"Número "+(i+1),c.num,{ph:"5562999999999"})}</div>`).join("")}
+    </fieldset>
+    <fieldset class="p-set"><legend>Endereço e redes</legend>
+      ${field("lE1","Endereço, linha 1",L.endereco1)}
+      ${field("lE2","Endereço, linha 2",L.endereco2)}
+      ${field("lIg","Link do Instagram",L.instagram)}
+      ${field("lIgN","Nome do Instagram",L.instagramNome)}
+      ${field("lIgC","Chamada da seção do Instagram",L.instagramChamada)}
+      ${field("lFb","Link do Facebook",L.facebook)}
+    </fieldset>
+    <fieldset class="p-set"><legend>A loja</legend>
+      ${field("lSt","Título",L.sobreTitulo)}
+      ${field("lSd","Palavra em itálico",L.sobreDestaque)}
+      ${field("lSx","Texto",L.sobreTexto,{area:true,rows:4})}
+    </fieldset>
+    <fieldset class="p-set"><legend>Números da loja</legend>
+      ${(L.numeros||[]).map((n,i) => `<div class="p-row">${field("lNv"+i,"Número "+(i+1),n.v)}${field("lNt"+i,"Legenda "+(i+1),n.t)}</div>`).join("")}
+    </fieldset>
+    <fieldset class="p-set"><legend>Departamentos</legend>
+      ${field("lDeps","Departamentos, na ordem dos arcos",(D.departamentos||[]).join(", "),{area:true,rows:3,hint:"Separe por vírgula. O arco usa a foto da primeira peça do departamento."})}
+    </fieldset>
+    <fieldset class="p-set"><legend>Usuário e senha</legend>
+      <small>Para trocar, mude ADMIN_USER e ADMIN_PASSWORD na Vercel (Settings → Environment Variables) e publique de novo.</small>
+    </fieldset>`;
 }
-function renderDeps(){
-  let k = 0;
-  $("cats").innerHTML = (D.departamentos || []).map(dep => {
-    const p = D.pecas.find(x => x.cat === dep && x.img);
-    if (p) return `<button class="cat" data-go="${esc(dep)}"><div class="frame">${photo(p.img, dep)}</div><b>${esc(dep)}</b></button>`;
-    const [pat, c, icon, light] = PADROES[k++ % PADROES.length];
-    return `<a class="cat" href="${esc(waLink(`Olá, A Passarela! Quero ver as opções de ${dep}.`))}" target="_blank" rel="noopener"><div class="frame"><div class="sw" style="${pattern(pat, c)}"></div><svg style="${light ? "color:rgb(216 254 71 / .8)" : ""}"><use href="#${icon}"/></svg></div><b>${esc(dep)}</b></a>`;
-  }).join("");
-  const imgs = D.pecas.filter(p => p.img).slice(-4).reverse();
-  $("insta").innerHTML = imgs.map(p => `<a href="${esc(D.loja.instagram)}" target="_blank" rel="noopener" aria-label="Ver no Instagram">${photo(p.img, p.name)}</a>`).join("");
-}
-
-/* ---------- Catálogo ---------- */
-let filter = "Todos";
-const favs = new Set();
-function renderChips(){
-  const cats = ["Todos", ...new Set(D.pecas.map(p => p.cat).filter(Boolean))];
-  if (!cats.includes(filter)) filter = "Todos";
-  $("chips").innerHTML = cats.map((c,i) => `<button class="chip" id="chip-${i}" data-cat="${esc(c)}" aria-pressed="${c===filter}">${esc(c)}</button>`).join("");
-}
-function setFilter(c){ filter = c; $("chips").querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.cat === c)); renderGrid(); }
-function renderGrid(){
-  const list = D.pecas.filter(p => filter === "Todos" || p.cat === filter);
-  $("grid").innerHTML = list.map(p => `
-    <article class="card">
-      <div class="ph">${photo(p.img, p.name)}${p.tag ? `<span class="badge">${esc(p.tag)}</span>` : ""}
-        <button class="fav" data-fav="${esc(p.id)}" aria-pressed="${favs.has(p.id)}" aria-label="Favoritar ${esc(p.name)}"><svg><use href="#i-heart"/></svg></button></div>
-      <h3>${esc(p.name)}</h3>
-      <div class="spec">${esc(p.spec)}</div>
-      <div class="card-foot">
-        <div class="price">${esc(priceOf(p))}<small>${esc(p.cat)}</small></div>
-        <button class="add" data-id="${esc(p.id)}">Adicionar</button>
-      </div>
-    </article>`).join("") || `<p class="sub">Nenhuma peça neste departamento ainda.</p>`;
-}
-$("chips").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b) setFilter(b.dataset.cat); });
-$("grid").addEventListener("click", e => {
-  const f = e.target.closest(".fav");
-  if (f) { const id = f.dataset.fav; favs.has(id) ? favs.delete(id) : favs.add(id); f.setAttribute("aria-pressed", favs.has(id)); return; }
-  const b = e.target.closest(".add"); if (!b) return;
-  const p = D.pecas.find(x => x.id === b.dataset.id);
-  addToBag(p.id, sizesOf(p)[0] || ""); b.textContent = "Na lista ✓"; b.classList.add("done");
-  setTimeout(() => { b.textContent = "Adicionar"; b.classList.remove("done"); }, 1400);
-});
-document.addEventListener("click", e => {
-  const c = e.target.closest("[data-go]"); if (!c) return;
-  e.preventDefault(); setFilter(c.dataset.go); $("vitrine").scrollIntoView();
+pBody.addEventListener("input", e => {
+  const t = e.target, v = t.type === "checkbox" ? t.checked : t.value;
+  if (tab === "pecas" && editing) {
+    const map = {fName:"name", fCat:"cat", fSpec:"spec", fPrice:"price", fSizes:"sizes", fTag:"tag", fVit:"vitrine", fVt:"vt", fVx:"vx", fVf:"vf", fCor:"cor"};
+    if (map[t.id]) { editing[map[t.id]] = v; setDirty(true); }
+    return;
+  }
+  if (tab === "loja") {
+    const L = D.loja, m = t.id.match(/^(lCn|lCv|lNv|lNt)(\d)$/);
+    if (m) { const i = +m[2]; if (m[1]==="lCn") L.contatos[i].label = v; if (m[1]==="lCv") L.contatos[i].num = digits(v); if (m[1]==="lNv") L.numeros[i].v = v; if (m[1]==="lNt") L.numeros[i].t = v; }
+    const map = {lFaixa:"faixa", lE1:"endereco1", lE2:"endereco2", lIg:"instagram", lIgN:"instagramNome", lIgC:"instagramChamada", lFb:"facebook", lSt:"sobreTitulo", lSd:"sobreDestaque", lSx:"sobreTexto"};
+    if (map[t.id]) L[map[t.id]] = v;
+    if (t.id === "lDeps") D.departamentos = v.split(",").map(s => s.trim()).filter(Boolean);
+    setDirty(true);
+  }
 });
 
-/* ---------- Minha lista ---------- */
-let bag = {};
-try { bag = JSON.parse(localStorage.getItem("passarela-lista2")) || {}; } catch(e) { bag = {}; }
-const save = () => { try { localStorage.setItem("passarela-lista2", JSON.stringify(bag)); } catch(e) {} };
-const parseKey = k => { const i = String(k).indexOf("|"); return {id: k.slice(0, i), size: k.slice(i + 1)}; };
-function addToBag(id, size=""){ const k = `${id}|${size}`; bag[k] = (bag[k]||0)+1; save(); renderBag(); toast("Adicionado à sua lista"); }
-function changeQty(k, d){ bag[k] = (bag[k]||0)+d; if (bag[k] <= 0) delete bag[k]; save(); renderBag(); }
-function renderBag(){
-  const entries = Object.entries(bag).map(([k,q]) => { const {id,size} = parseKey(k); return {k, p: D.pecas.find(x => x.id === id), size, q}; }).filter(x => x.p);
-  const count = entries.reduce((s,x) => s + x.q, 0);
-  $("bagCount").textContent = count; $("total").textContent = count;
-  $("items").innerHTML = entries.length ? entries.map(({k,p,size,q}) => `
-    <div class="item">
-      <div class="mini">${photo(p.img, p.name)}</div>
-      <div><b>${esc(p.name)}${size ? ` · ${esc(size)}` : ""}</b><div class="qty"><button data-d="-1" data-k="${esc(k)}" aria-label="Diminuir">−</button>${q}<button data-d="1" data-k="${esc(k)}" aria-label="Aumentar">+</button></div></div>
-      <div class="p">${esc(priceOf(p))}</div>
-    </div>`).join("") : `<div class="empty">Sua lista está vazia.<br>Escolha peças na vitrine.</div>`;
-  const msg = entries.length
-    ? "Olá, A Passarela! Vi estas peças no site e gostaria de saber valores e disponibilidade:\n\n" + entries.map(({p,size,q}) => `• ${q}x ${p.name}${size ? ` (tamanho ${size})` : ""}`).join("\n")
-    : "Olá, A Passarela! Gostaria de mais informações.";
-  $("checkout").href = waLink(msg);
+// Reduz a foto no navegador (até 1600 px, JPEG) para caber no envio.
+function reduzir(file){
+  return new Promise((ok, falha) => {
+    const img = new Image(), url = URL.createObjectURL(file);
+    img.onload = () => {
+      const k = Math.min(1, 1600 / Math.max(img.width, img.height));
+      const c = document.createElement("canvas"); c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+      URL.revokeObjectURL(url);
+      c.toBlob(b => b ? ok(b) : falha(new Error("canvas")), "image/jpeg", 0.85);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); falha(new Error("imagem")); };
+    img.src = url;
+  });
 }
-$("items").addEventListener("click", e => { const b = e.target.closest("button[data-k]"); if (b) changeQty(b.dataset.k, +b.dataset.d); });
-const drawer = $("drawer"), overlay = $("overlay");
-const openBag = () => { drawer.hidden = overlay.hidden = false; $("closeBag").focus(); };
-const closeBag = () => { drawer.hidden = overlay.hidden = true; };
-$("openBag").onclick = openBag; $("closeBag").onclick = closeBag; overlay.onclick = closeBag;
-document.addEventListener("keydown", e => { if (e.key === "Escape") { closeBag(); } });
-let tt; function toast(t){ const el = $("toast"); el.textContent = t; el.hidden = false; clearTimeout(tt); tt = setTimeout(() => el.hidden = true, 1800); }
-
-/* ---------- Vitrine animada ---------- */
-const DUR = 6500;
-const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-let SLIDES = [], cur = 0, size = "", timer = null, paused = false, started = 0, remaining = DUR;
-const objHTML = p => `<div class="obj photo-obj"><div class="float"><div class="photo-frame">${photo(p.img, p.name)}</div></div><div class="ground"></div></div>`;
-function restart(el){ el.classList.remove("fade"); void el.offsetWidth; el.classList.add("fade"); }
-function buildSlides(){
-  SLIDES = D.pecas.filter(p => p.vitrine && p.img);
-  if (!SLIDES.length) SLIDES = D.pecas.filter(p => p.img).slice(0, 4);
-  $("show").closest("section").hidden = !SLIDES.length;
-  if (cur >= SLIDES.length) cur = 0;
-}
-function show(i, dir=1){
-  if (!SLIDES.length) return;
-  const prevObj = $("sObj").querySelector(".obj");
-  cur = (i + SLIDES.length) % SLIDES.length;
-  const p = SLIDES[cur], c = CORES[p.cor] || CORES.limao;
-  const card = $("show");
-  card.style.setProperty("--dir", dir);
-  Object.entries({"--s-bg":c.bg,"--s-ink":c.ink,"--s-line":c.line,"--s-btn":c.btn,"--s-btn-ink":c.btnInk}).forEach(([k,v]) => card.style.setProperty(k, v));
-  const place = () => { $("sObj").innerHTML = objHTML(p); };
-  if (prevObj && !reduce && dir) { prevObj.classList.add("out"); setTimeout(place, 380); } else place();
-  $("sKicker").textContent = p.name; $("sTitle").textContent = p.vt || p.name; $("sText").textContent = p.vx || p.spec || ""; $("sTag").textContent = p.vf || "";
-  $("sPrice").textContent = priceOf(p);
-  ["sKicker","sTitle","sText","sTag","sPrice"].forEach(id => restart($(id)));
-  const sizes = sizesOf(p);
-  $("sSizeLabel").textContent = sizes.length ? "Escolha o tamanho" : "";
-  size = sizes[Math.min(1, sizes.length - 1)] || "";
-  $("sSizes").setAttribute("aria-label", "Tamanhos");
-  $("sSizes").innerHTML = sizes.map(z => `<button class="size" aria-pressed="${z === size}">${esc(z)}</button>`).join("");
-  const n = SLIDES[(cur + 1) % SLIDES.length];
-  $("sThumb").innerHTML = photo(n.img, n.name);
-  $("sNext").setAttribute("aria-label", `Próxima peça: ${n.name}`);
-  $("sBars").innerHTML = SLIDES.map((x,k) => `<button aria-label="${esc(x.name)}" class="${k < cur ? "done" : k === cur ? "on" : ""}"><i></i></button>`).join("");
-  $("sBars").style.setProperty("--dur", DUR + "ms");
-  schedule();
-}
-function schedule(){ clearTimeout(timer); remaining = DUR; started = Date.now(); if (!reduce && !paused && SLIDES.length > 1) timer = setTimeout(() => show(cur + 1, 1), remaining); }
-function pause(){ if (paused) return; paused = true; $("show").classList.add("paused"); clearTimeout(timer); remaining -= Date.now() - started; }
-function resume(){ if (!paused) return; paused = false; $("show").classList.remove("paused"); started = Date.now(); if (!reduce && SLIDES.length > 1) timer = setTimeout(() => show(cur + 1, 1), Math.max(remaining, 400)); }
-$("prev").onclick = () => show(cur - 1, -1);
-$("next").onclick = () => show(cur + 1, 1);
-$("sNext").onclick = () => show(cur + 1, 1);
-$("sBars").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; const k = [...$("sBars").children].indexOf(b); if (k !== cur) show(k, k > cur ? 1 : -1); });
-$("sSizes").addEventListener("click", e => { const b = e.target.closest(".size"); if (!b) return; size = b.textContent; $("sSizes").querySelectorAll(".size").forEach(x => x.setAttribute("aria-pressed", x === b)); });
-$("sCta").onclick = () => { if (SLIDES[cur]) addToBag(SLIDES[cur].id, size); };
-$("show").addEventListener("mouseenter", pause); $("show").addEventListener("mouseleave", resume);
-$("show").addEventListener("focusin", pause); $("show").addEventListener("focusout", e => { if (!$("show").contains(e.relatedTarget)) resume(); });
-let tx = null;
-$("show").addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, {passive:true});
-$("show").addEventListener("touchend", e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1); tx = null; });
-
-function renderAll(keepSlide){
-  renderLoja(); renderDeps(); renderChips(); renderGrid(); renderBag();
-  buildSlides(); show(keepSlide ? cur : 0, 0);
-}
-
-fetch("dados.json", {cache: "no-store"}).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
-  D = d; D.pecas = D.pecas || []; D.loja = D.loja || {};
-  renderAll(false);
-}).catch(() => {
-  $("sTitle").textContent = "Não foi possível carregar a vitrine";
-  $("sText").textContent = "Atualize a página para tentar de novo.";
+const paraBase64 = blob => new Promise(ok => { const r = new FileReader(); r.onload = () => ok(String(r.result).split(",")[1]); r.readAsDataURL(blob); });
+pBody.addEventListener("change", async e => {
+  if (e.target.id !== "pFile" || !e.target.files[0] || !editing) return;
+  const alvo = editing;
+  $("pUpMsg").textContent = "Enviando foto…";
+  try {
+    const blob = await reduzir(e.target.files[0]);
+    const j = await api("foto", {tipo:"image/jpeg", base64: await paraBase64(blob)});
+    previas[j.caminho] = URL.createObjectURL(blob);
+    alvo.img = j.caminho; setDirty(true);
+    if (editing === alvo) { renderPecaForm(); $("pUpMsg").textContent = "Foto enviada. Toque em Salvar no site para usar."; }
+  } catch (j) {
+    if ($("pUpMsg")) $("pUpMsg").textContent = j && j.erro ? msgErro(j) : "Não deu para abrir essa foto. Use JPG, PNG ou WEBP.";
+  }
 });
+pBody.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.id === "pNew") {
+    editing = {id:"p" + Date.now().toString(36), name:"Nova peça", cat:(D.departamentos||[])[0]||"", spec:"", img:"", tag:"", price:"", sizes:"P, M, G, GG", vitrine:false, vt:"", vx:"", vf:"", cor:"limao"};
+    D.pecas.unshift(editing); setDirty(true); renderPainel(); return;
+  }
+  if (b.id === "pBack") { editing = null; renderPainel(); return; }
+  const i = +b.dataset.i, act = b.dataset.act; if (!act) return;
+  if (act === "edit") { editing = D.pecas[i]; confirmDel = null; renderPainel(); window.scrollTo(0, 0); return; }
+  if (act === "up" || act === "down") { const j = act === "up" ? i - 1 : i + 1; [D.pecas[i], D.pecas[j]] = [D.pecas[j], D.pecas[i]]; confirmDel = null; setDirty(true); renderPainel(); return; }
+  if (act === "del") { if (confirmDel === i) { D.pecas.splice(i, 1); confirmDel = null; setDirty(true); } else confirmDel = i; renderPainel(); }
+});
+$("tabPecas").onclick = () => { tab = "pecas"; renderPainel(); };
+$("tabLoja").onclick = () => { tab = "loja"; editing = null; renderPainel(); };
+$("pSave").onclick = async () => {
+  if (saving || !D) return;
+  saving = true; $("pSave").disabled = true; $("pMsg").textContent = "Salvando…";
+  try {
+    const j = await api("dados", {dados: D, sha});
+    sha = j.sha; setDirty(false);
+    $("pMsg").textContent = "Salvo! O site atualiza sozinho em cerca de 1 minuto.";
+    toast("Site salvo");
+  } catch (j) {
+    $("pMsg").textContent = msgErro(j);
+  } finally {
+    saving = false; $("pSave").disabled = false;
+  }
+};
+window.addEventListener("beforeunload", e => { if (dirty) { e.preventDefault(); e.returnValue = ""; } });
+
+fetch("/api/sessao", {cache:"no-store"}).then(r => r.json()).then(s => {
+  if (s.falta && s.falta.length) return semConfig(s.falta);
+  if (s.logado) return abrir().catch(() => travar());
+  travar();
+}).catch(() => semConfig(["as rotas /api não responderam"]));
 </script>
-
 </body>
 </html>

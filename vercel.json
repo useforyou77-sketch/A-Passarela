@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/dados.json", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] },
+    { "source": "/painel", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] }
+  ]
+}
